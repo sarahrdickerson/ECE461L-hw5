@@ -1,0 +1,14 @@
+#top {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+
+#bottom {
+    background-color: blue;
+    color: #ffffff;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
