@@ -1,24 +1,129 @@
-body {
+@font-face {
+    font-family: khula-regular;
+    src: url("assets/fonts/khula/khula-regular.otf");
+}
+
+@font-face {
+    font-family: khula-light;
+    src: url("assets/fonts/khula/khula-light.otf");
+}
+
+@font-face {
+    font-family: khula-semibold;
+    src: url("assets/fonts/khula/khula-semibold.otf");
+}
+  
+body, html {
     background-color: #f2f2f2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: khula-regular, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-.top {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 5px;
-    transition:0.35s;
+.fullscreen-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
 }
 
-.top:hover {
-    background-color: gray;
+.container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
 }
 
-.bottom {
-    background-color: blue;
-    color: #ffffff;
-    clear: both;
-    text-align: center;
-    padding: 5px;
+.container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
+}
+
+.home {
+    background-color: #284B63;
+    color: #f2f2f2;
+}
+
+#console {
+    margin: 40px;
+    margin-top: 20px;
+    padding: 47px;
+    overflow-y: auto;
+    line-height: 22px;
+    height: 290px;
+    width: 550px;
+    font-size: 90%;
+    font-family: Monaco,monospace;
+    border-top: 20px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #2a2d34;
+    box-shadow: 12px 12px 1px #A6808C;
+}
+
+a {
+	text-decoration: none;
+	color: #575757;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #8d8d8d;
+}
+
+#console a {
+	text-decoration: underline;
+}
+
+ul { 
+	margin: 0; 
+	padding-left: 24px; 
+}
+
+.first-color {
+	/* color: #ac78c2; */
+    color: #c678de;
+}
+.second-color {
+	/* color: #c5c8c6; */
+    color: #e5c07c;
+}
+
+.third-color {
+	/* color: #5888ca; */
+    color: #55b6c2;
+}
+
+.fourth-color {
+	/* color: #f0c674; */
+    color: #d66872;
+}
+
+.fifth-color {
+	/* color: #b5bd68; */
+    color: #98c379;
+}
+
+.sixth-color {
+    color: #cd9765;
+}
+
+.regular-color {
+    color: #c5c8c6;
+}
+
+.portrait {
+    height: 400px;
+    margin: 10px;
+    border-radius: 4px;
 }
